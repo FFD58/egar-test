@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light shadow mb-5">
+        <div class="container d-flex justify-content-space-between align-items-center">
+            <a class="navbar-brand text-success logo h1 align-self-center" href="/">Egar-test</a>
+            <div class="navbar align-self-center d-flex">
+                <form th:action="@{/search}" class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search" name="search"
+                           id="search" size="50" th:value="${search}" required/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+
+</body>
+</html>
